@@ -80,8 +80,8 @@ const FeaturedWorks = () => {
               onClick={() => setActiveCategory(category.id)}
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                 activeCategory === category.id
-                  ? "bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-lg scale-105"
-                  : "bg-white text-gray-700 hover:bg-gray-50 shadow-md hover-lift"
+                  ? "bg-gradient-to-r from-yello-500 to-yellow-600 text-white shadow-lg scale-105"
+                  : "bg-white text-gray-700 hover:bg-gray-300 shadow-md hover-lift"
               }`}
             >
               {category.emoji} {category.name}
@@ -118,11 +118,7 @@ const FeaturedWorks = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <button className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-12 py-4 rounded-full font-bold text-lg hover-lift shadow-xl">
-            View Full Gallery ✨
-          </button>
-        </div>
+        
       </div>
     </div>
   );
