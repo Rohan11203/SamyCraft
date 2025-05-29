@@ -1,4 +1,4 @@
-import Image1 from "../assets/Image1.jpg";
+import Image5 from "../assets/Image5.jpg";
 import Image2 from "../assets/Image22.jpg";
 import spiderImage from "../assets/spider_image.gif";
 import { motion } from "framer-motion";
@@ -32,11 +32,11 @@ const Hero1 = () => {
 
       <img src={spiderImage} className="absolute top-10 right-0 z-10" />
       <motion.img
-        src={Image1}
+        src={Image2}
         alt=""
         initial={{ x: -100, opacity: 0, rotate: -12 }}
         animate={{ x: 0, opacity: 1, rotate: -12 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute top-45 left-30 w-48 rounded-xl shadow-lg"
         style={{ transform: "rotate(-12deg)", filter: "brightness(75%)" }}
       />
@@ -44,8 +44,8 @@ const Hero1 = () => {
       <motion.img
         initial={{ x: -100, opacity: 0, rotate: 8 }}
         animate={{ x: 0, opacity: 1, rotate: 8 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        src={Image2}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        src={Image5}
         alt=""
         className="absolute bottom-50 left-55 w-48 rounded-xl shadow-lg"
         style={{ transform: "rotate(8deg)", filter: "brightness(75%)" }}
@@ -53,8 +53,8 @@ const Hero1 = () => {
       <motion.img
        initial={{ x: 100, opacity: 0, rotate: 18 }}
         animate={{ x: 0, opacity: 1, rotate: 18 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        src={Image1}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        src={Image2}
         alt=""
         className="absolute top-45 right-20 w-48 rounded-xl shadow-lg"
         style={{ transform: "rotate(18deg)", filter: "brightness(75%)" }}
@@ -63,8 +63,8 @@ const Hero1 = () => {
       <motion.img
         initial={{ x: 100, opacity: 0, rotate: -8 }}
         animate={{ x: 0, opacity: 1, rotate: -8 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        src={Image2}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        src={Image5}
         alt=""
         className="absolute bottom-45 right-50 w-48 rounded-xl"
         style={{

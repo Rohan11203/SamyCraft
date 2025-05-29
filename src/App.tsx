@@ -4,6 +4,9 @@ import Navbar from "./components/Navbar";
 import Hero1 from "./components/Hero1";
 import About from "./components/About";
 import FeaturedWorks from "./components/FeaturedWorks";
+import ScrollText from "./components/ScrollText";
+import CoolSection from "./components/CoolSection";
+import ContactUs from "./components/ContactUs";
 function App() {
   return (
     <>
@@ -14,8 +17,12 @@ function App() {
         <Navbar />
         <Hero1 />
         <About />
+        <ScrollText />
+        <CoolSection />
         <FeaturedWorks />
+        <ContactUs />
       </div>
+
     </>
   );
 }

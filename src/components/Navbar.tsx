@@ -1,8 +1,8 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
+import { FaEnvelope, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
-  // ref array for the middle links
   const linkRefs = useRef<HTMLAnchorElement[]>([]);
   linkRefs.current = [];
 
@@ -25,7 +25,6 @@ const Navbar = () => {
     >
       <div className="navbar-logo">SamyCraft</div>
 
-      {/* ← only this block changed to add refs & mapping */}
       <div className="flex navbar-nav gap-6">
         <a className="cursor-pointer  hover:border-b-1">Home</a>
         <a className="cursor-pointer   hover:border-b-1">About</a>
@@ -34,9 +33,9 @@ const Navbar = () => {
       </div>
 
       <div className="flex navbar-social gap-4">
-        <div>Inst</div>
-        <div>Gmail</div>
-        <div>Link</div>
+        <div><FaInstagram /></div>
+        <div><FaEnvelope /></div>
+        <div><FaTwitter /></div>
       </div>
     </div>
   );

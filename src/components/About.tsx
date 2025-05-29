@@ -1,20 +1,35 @@
-import backgroundImage from "../assets/samu.jpg";
+import { motion } from "framer-motion";
 import samImage from "../assets/samu1.jpg";
 const About = () => {
   return (
-    <div className="min-h-screen relative bg-center py-20 sm:px-20 px-0" id="about">
+    <div
+      className="min-h-screen relative bg-center py-20 sm:px-20 px-0"
+      id="about"
+    >
       <div className="container text-white mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="fade-in-up">
-            <h2 className="text-5xl md:text-6xl font-black mb-8">
+            <motion.h2
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="text-5xl md:text-6xl font-black mb-8"
+            >
               <span className="text-gray-500">Meet the</span>
               <span className="gradient-text font-caveat block">
                 {" "}
                 Artist ✨
               </span>
-            </h2>
+            </motion.h2>
 
-            <div className="space-y-6 text-white text-lg text-gray-600 leading-relaxed">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="space-y-6 text-white text-lg  leading-relaxed"
+            >
               <p>
                 Hey there! 👋 I'm a passionate creator who believes that art has
                 the power to capture emotions, tell stories, and create lasting
@@ -33,7 +48,7 @@ const About = () => {
                 My style blends modern aesthetics with a touch of dreamy magic
                 ✨ Because life's too short for boring art!
               </p>
-            </div>
+            </motion.div>
 
             <div className="flex flex-wrap gap-4 mt-8">
               <span className="bg-gradient-to-r from-pink-100 to-purple-100 text-purple-700 px-6 py-3 rounded-full font-semibold">
@@ -51,9 +66,15 @@ const About = () => {
           <div className="relative">
             <div className=" rounded-3xl p-8 ">
               <div className=" rounded-2xl flex items-center justify-center">
-                <div className="w-64 h-64 overflow-hidden rounded-2xl bg-cover">
+                <motion.div
+                  initial={{ x: 100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: false, amount: 0.5 }} 
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                  className="w-64 h-64 overflow-hidden rounded-2xl bg-cover"
+                >
                   <img className="w-full h-full object-cover" src={samImage} />
-                </div>
+                </motion.div>
               </div>
 
               <div className="mt-6 text-center">
@@ -70,6 +91,9 @@ const About = () => {
               className="absolute -bottom-4 -left-4 w-16 h-16 bg-pink-300 rounded-full opacity-60 float-animation"
               style={{ animationDelay: "2s" }}
             ></div>
+            <div 
+            style={{ fontFamily: '"Patrick Hand", cursive' }}
+            className="absolute  -right-6 w-58 h-28 font-semibold text-[#f5d7bd] text-4xl">Scroll Down!! 👇🏻</div>
           </div>
         </div>
       </div>
