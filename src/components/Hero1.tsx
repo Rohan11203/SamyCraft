@@ -1,4 +1,4 @@
-import Image5 from "../assets/Image5.jpg";
+import Image5 from "../assets/image5.jpg";
 import Image2 from "../assets/Image22.jpg";
 import spiderImage from "../assets/spider_image.gif";
 import { motion } from "framer-motion";
