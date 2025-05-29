@@ -67,7 +67,7 @@ const FeaturedWorks = () => {
       : portfolioItems.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="py-20" id="feturedWork">
+    <div className="py-20" id="work">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in-up">
           <motion.h2

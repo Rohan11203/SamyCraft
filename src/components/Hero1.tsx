@@ -4,7 +4,7 @@ import spiderImage from "../assets/spider_image.gif";
 import { motion } from "framer-motion";
 const Hero1 = () => {
   return (
-    <div className="relative h-screen w-full flex items-center justify-center text-white px-4">
+    <div id="home" className="relative h-screen w-full flex items-center justify-center text-white px-4">
       <div className="relative z-30 flex flex-col items-center gap-6 max-w-xl text-center">
         <motion.h1
           initial={{ y: -100, opacity: 0 }}

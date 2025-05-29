@@ -7,7 +7,18 @@ import FeaturedWorks from "./components/FeaturedWorks";
 import ScrollText from "./components/ScrollText";
 import CoolSection from "./components/CoolSection";
 import ContactUs from "./components/ContactUs";
+import Lenis from "lenis";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({ smoothWheel:true });
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <>
       <div
@@ -22,7 +33,6 @@ function App() {
         <FeaturedWorks />
         <ContactUs />
       </div>
-
     </>
   );
 }

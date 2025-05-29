@@ -33,10 +33,10 @@ const Navbar = () => {
       <div className="navbar-logo">SamyCraft</div>
 
       <div className="hidden sm:flex navbar-nav gap-6">
-        <a className="cursor-pointer  hover:border-b-1">Home</a>
-        <a className="cursor-pointer   hover:border-b-1">About</a>
-        <a className="cursor-pointer   hover:border-b-1">Service</a>
-        <a className="cursor-pointer  hover:border-b-1">Contact</a>
+        <a href="#home" className="cursor-pointer  hover:border-b-1">Home</a>
+        <a href="#about" className="cursor-pointer   hover:border-b-1">About</a>
+        <a href="#work" className="cursor-pointer   hover:border-b-1">Service</a>
+        <a href="#contact" className="cursor-pointer  hover:border-b-1">Contact</a>
       </div>
 
       <div className="flex navbar-social gap-4">
@@ -75,10 +75,10 @@ const Navbar = () => {
 
       {isMobileMenu ? (
         <div className="absolute  top-20 flex flex-col gap-2 ">
-          <a className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1">Home</a>
-          <a className="cursor-pointer rounded-xl p-2 w-68  border hover:border-b-1">About</a>
-          <a className="cursor-pointer rounded-xl p-2 w-68 border  hover:border-b-1">Service</a>
-          <a className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1">Contact</a>
+          <a  href="#home" className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1">Home</a>
+          <a  href="#about" className="cursor-pointer rounded-xl p-2 w-68  border hover:border-b-1">About</a>
+          <a  href="#work" className="cursor-pointer rounded-xl p-2 w-68 border  hover:border-b-1">Service</a>
+          <a  href="#contact" className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1">Contact</a>
         </div>
       ) : null}
     </div>

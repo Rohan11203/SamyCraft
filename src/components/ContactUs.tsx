@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 export default function ContactUs() {
   return (
     <footer
+    id="contact"
       className="relative  text-white overflow-hidden "
       style={{ fontFamily: '"Patrick Hand", cursive', height: "100vh" }}
     >
@@ -64,14 +65,15 @@ export default function ContactUs() {
           instagram
         </a>
         <a href="#" className="hover:underline">
-          linkedin
+          email
+        </a>
+        <a href="#" className="hover:underline">
+          Twitter
         </a>
         <a href="#" className="hover:underline">
           facebook
         </a>
-        <a href="#" className="hover:underline">
-          azar
-        </a>
+        
       </motion.div>
     </footer>
   );
