@@ -10,11 +10,11 @@ const Hero1 = () => {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="text-7xl md:text-9xl  rubik-doodle-shadow-regular "
+          className="text-6xl md:text-9xl  rubik-doodle-shadow-regular "
         >
           CREATIVE
         </motion.h1>
-        <p className="text-xl">
+        <p className="text-sm sm:text-xl">
           Bring Your Memories to Life—One Sketch at a Time
         </p>
         <button className="px-8 py-3 bg-white text-black rounded-full font-semibold hover:scale-105 transition-transform">
@@ -24,13 +24,13 @@ const Hero1 = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="text-7xl md:text-9xl rubik-doodle-shadow-regular"
+          className="text-5xl md:text-9xl rubik-doodle-shadow-regular"
         >
           COLLECTIVE
         </motion.h1>
       </div>
 
-      <img src={spiderImage} className="absolute top-10 right-0 z-10" />
+      <img src={spiderImage} className="absolute  top-10 right-0 z-10 sm:block hidden" />
       <motion.img
         src={Image2}
         alt=""

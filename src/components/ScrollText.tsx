@@ -16,7 +16,7 @@ export default function ScrollText() {
     gsap.to(containerRef.current, {
       x: -textWidth,
       ease: "none",
-      duration: 20, // tweak for speed
+      duration: 20,
       repeat: -1,
     });
   }, []);
@@ -27,13 +27,13 @@ export default function ScrollText() {
         <div
           style={{ fontFamily: "Bebas Neue,sans-serif" }}
           ref={innerRef}
-          className="inline-block  text-[10vh] whitespace-nowrap  text-gray-900 font-semibold"
+          className="inline-block  sm:text-[10vh] text-6xl whitespace-nowrap  text-gray-900 font-semibold"
         >
           {sentence}
         </div>
         <div
           style={{ fontFamily: "Bebas Neue,sans-serif" }}
-          className="inline-block text-[10vh]  text-gray-900 font-semibold"
+          className="inline-block sm:text-[10vh] text-6xl  text-gray-900 font-semibold"
         >
           {sentence}
         </div>

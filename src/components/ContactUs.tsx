@@ -43,13 +43,13 @@ export default function ContactUs() {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute bottom-32 left-8 text-[10rem] leading-none"
+        className="absolute bottom-32 left-8 sm:text-[10rem] text-[5rem] leading-none"
         style={{ color: "cadetblue" }}
       >
         @2025
       </motion.div>
 
-      <div className="absolute inset-x-0 bottom-20 text-center text-sm text-gray-300">
+      <div className="absolute inset-x-0 bottom-10 text-center text-sm text-gray-300">
         <div>Made by</div>
         <div>love</div>
       </div>

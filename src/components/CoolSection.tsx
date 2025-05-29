@@ -10,19 +10,19 @@ export default function CollectionSection() {
     <section className="relative py-20 ">
       <h2
       style={{ fontFamily: '"Patrick Hand", cursive' }}
-      className="text-center text-7xl font-bold mb-8 text-[#f5d7bd]">
+      className="text-center sm:text-7xl text-5xl font-bold mb-8 text-[#f5d7bd]">
         Browse Our Creations.
       </h2>
 
       <div className="max-w-5xl mx-auto grid grid-cols-3 gap-4 text-center mb-4"
        style={{ fontFamily: '"Patrick Hand", cursive' }}
       >
-        <div className="text-2xl font-semibold text-[cadetblue]">Product.</div>
-        <div className="text-2xl font-semibold text-[cadetblue]">Type.</div>
-        <div className="text-2xl font-semibold text-[cadetblue]">Price.</div>
+        <div className="sm:text-2xl text-2xl  font-semibold text-[cadetblue]">Product.</div>
+        <div className="sm:text-2xl text-2xl  font-semibold text-[cadetblue]">Type.</div>
+        <div className="sm:text-2xl text-2xl  font-semibold text-[cadetblue]">Price.</div>
       </div>
 
-      <div className="max-w-5xl mx-auto grid grid-cols-3 text-2xl gap-4 text-center"
+      <div className="max-w-5xl mx-auto grid grid-cols-3 sm:text-2xl text-xl gap-4 text-center"
        style={{ fontFamily: '"Patrick Hand", cursive' }}
       >
         {items.map((item, i) => (

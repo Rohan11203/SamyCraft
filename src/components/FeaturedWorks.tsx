@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import work1  from "../assets/work1.jpg"
-import  work2  from "../assets/work2.jpg"
-import  work3  from "../assets/work3.jpg"
-import  work4  from "../assets/work4.jpg"
-import  work5  from "../assets/work5.jpg"
+import work1 from "../assets/work1.jpg";
+import work2 from "../assets/work2.jpg";
+import work3 from "../assets/work3.jpg";
+import work4 from "../assets/work4.jpg";
+import work5 from "../assets/work5.jpg";
 const FeaturedWorks = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
@@ -20,32 +20,28 @@ const FeaturedWorks = () => {
       id: 2,
       title: "Cosmic Illustration",
       category: "illustrations",
-      image:
-        work2,
+      image: work2,
       description: "Starry night themed artwork",
     },
     {
       id: 3,
       title: "Anniversary Gift Set",
       category: "gifts",
-      image:
-        work3,
+      image: work3,
       description: "Personalized gift package design",
     },
     {
       id: 4,
       title: "Living Space Art",
       category: "illustrations",
-      image:
-        work4,
+      image: work4,
       description: "Modern interior illustration",
     },
     {
       id: 5,
       title: "Nature Portrait",
       category: "portraits",
-      image:
-       work5,
+      image: work5,
       description: "Outdoor lifestyle portrait",
     },
     {
@@ -115,11 +111,8 @@ const FeaturedWorks = () => {
           ))}
         </motion.div>
 
-        <motion.div
-          initial={{ x: -50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+        <div
+         
           className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8"
         >
           {filteredItems.map((item, index) => (
@@ -145,7 +138,7 @@ const FeaturedWorks = () => {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
