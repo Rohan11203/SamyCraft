@@ -61,13 +61,13 @@ export default function ContactUs() {
         viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       className="absolute bottom-32 right-8 flex flex-col space-y-2 text-base text-gray-300">
-        <a href="#" className="hover:underline">
+        <a href="https://www.instagram.com/sammys_kraft_house/?igsh=b3lsOGIxZ2t6NGZp#" className="hover:underline">
           instagram
         </a>
-        <a href="#" className="hover:underline">
-          email
+        <a href="" className="hover:underline">
+          kadusamruddhi11@gmail.com
         </a>
-        <a href="#" className="hover:underline">
+        <a href="https://x.com/RoHanShikh43138" className="hover:underline">
           Twitter
         </a>
         <a href="#" className="hover:underline">

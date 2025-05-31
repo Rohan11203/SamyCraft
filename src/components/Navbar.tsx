@@ -1,12 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
-import {
-  FaBars,
-  FaEnvelope,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
-
+import { FaBars, FaEnvelope, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMobileMenu, setIsmobileMenu] = useState(false);
@@ -33,21 +27,35 @@ const Navbar = () => {
       <div className="navbar-logo">SamyCraft</div>
 
       <div className="hidden sm:flex navbar-nav gap-6">
-        <a href="#home" className="cursor-pointer  hover:border-b-1">Home</a>
-        <a href="#about" className="cursor-pointer   hover:border-b-1">About</a>
-        <a href="#work" className="cursor-pointer   hover:border-b-1">Service</a>
-        <a href="#contact" className="cursor-pointer  hover:border-b-1">Contact</a>
+        <a href="#home" className="cursor-pointer  hover:border-b-1">
+          Home
+        </a>
+        <a href="#about" className="cursor-pointer   hover:border-b-1">
+          About
+        </a>
+        <a href="#work" className="cursor-pointer   hover:border-b-1">
+          Service
+        </a>
+        <a href="#contact" className="cursor-pointer  hover:border-b-1">
+          Contact
+        </a>
       </div>
 
       <div className="flex navbar-social gap-4">
         <div>
-          <FaInstagram />
+          <a href="https://www.instagram.com/sammys_kraft_house/?igsh=b3lsOGIxZ2t6NGZp#">
+            <FaInstagram />
+          </a>
         </div>
         <div>
-          <FaEnvelope />
+          <a href="">
+            <FaEnvelope />
+          </a>
         </div>
         <div>
-          <FaTwitter />
+          <a href="https://x.com/RoHanShikh43138">
+            <FaTwitter />
+          </a>
         </div>
       </div>
 
@@ -56,7 +64,7 @@ const Navbar = () => {
           className="sm:hidden block "
           onClick={() => {
             setIsopen(true);
-            setIsmobileMenu(true)
+            setIsmobileMenu(true);
           }}
         >
           <FaBars />
@@ -66,7 +74,7 @@ const Navbar = () => {
           className="sm:hidden block"
           onClick={() => {
             setIsopen(false);
-            setIsmobileMenu(false)
+            setIsmobileMenu(false);
           }}
         >
           X
@@ -75,10 +83,30 @@ const Navbar = () => {
 
       {isMobileMenu ? (
         <div className="absolute  top-20 flex flex-col gap-2 ">
-          <a  href="#home" className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1">Home</a>
-          <a  href="#about" className="cursor-pointer rounded-xl p-2 w-68  border hover:border-b-1">About</a>
-          <a  href="#work" className="cursor-pointer rounded-xl p-2 w-68 border  hover:border-b-1">Service</a>
-          <a  href="#contact" className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1">Contact</a>
+          <a
+            href="#home"
+            className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="cursor-pointer rounded-xl p-2 w-68  border hover:border-b-1"
+          >
+            About
+          </a>
+          <a
+            href="#work"
+            className="cursor-pointer rounded-xl p-2 w-68 border  hover:border-b-1"
+          >
+            Service
+          </a>
+          <a
+            href="#contact"
+            className="cursor-pointer rounded-xl p-2 w-68 border hover:border-b-1"
+          >
+            Contact
+          </a>
         </div>
       ) : null}
     </div>
